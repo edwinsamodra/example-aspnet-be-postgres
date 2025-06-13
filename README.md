@@ -18,4 +18,8 @@ POSTGRES_USER=postgres
 POSTGRES_PASSWORD=mysecretpassword
 ```
 
-## environment variable menggunakan .env, bukan appsettings.json atau appsettings.Development.json
+## Info lain
+- environment variable menggunakan .env, bukan appsettings.json atau appsettings.Development.json
+- port 8081: adalah untuk backend api
+- port 8080: adalah untuk adminer (database viewer, mirip phpmyadmin) *jika tidak dipakai, bisa dihapus saja
+- port database tidak di-ekspos ke public
