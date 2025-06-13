@@ -1,0 +1,12 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore VS/IDE specific files
+*.user
+*.suo
+.vscode/
+.idea/
+
+# Ignore launch/test artifacts
+*.http
