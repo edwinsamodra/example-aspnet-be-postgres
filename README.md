@@ -29,5 +29,8 @@ POSTGRES_PASSWORD=mysecretpassword
 - terkait data database, itu di dump dulu jadi .sql, lalu direname jadi `init.sql` karena file ini nanti akan import lagi
 
 ## How to run
+Up
 `sudo docker compose up --build -d`
+
+Down
 `sudo docker compose down`
