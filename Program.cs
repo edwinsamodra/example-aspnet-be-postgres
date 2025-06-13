@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// PostgreSQL connection
-
-// docker env
+// PostgreSQL connection pakai load .env
 Env.Load();
 
 var host = Environment.GetEnvironmentVariable("POSTGRES_HOST");
@@ -17,9 +15,6 @@ var user = Environment.GetEnvironmentVariable("POSTGRES_USER");
 var password = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
 
 var connectionString = $"Host={host};Port={port};Database={db};Username={user};Password={password}";
-
-// asp.net env
-// var connectionString = builder.Configuration.GetConnectionString("Postgres");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
