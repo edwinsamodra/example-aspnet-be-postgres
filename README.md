@@ -30,3 +30,4 @@ POSTGRES_PASSWORD=mysecretpassword
 
 ## How to run
 `sudo docker compose up --build -d`
+`sudo docker compose down`
