@@ -22,6 +22,7 @@ POSTGRES_PASSWORD=mysecretpassword
 - environment variable menggunakan .env, bukan appsettings.json atau appsettings.Development.json
 - port 8081: adalah untuk backend api
 - port 8080: adalah untuk adminer (database viewer, mirip phpmyadmin) *jika tidak dipakai, bisa dihapus saja
+- Terkait port, jika ada yg dibingungin, aku bisa bantu jelasin
 - port database tidak di-ekspos ke public
 - versi ASP.NET , postgres pakai yang **Latest**, bisa disesuaikan kalo memang perlu
 - Dockerfile dan docker-compose.yml sudah ku config. bukan hasil generate visual studio
